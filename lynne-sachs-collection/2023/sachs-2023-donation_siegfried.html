@@ -33,10 +33,21 @@
 <script>
   $(document).ready(function () { 
     $('#dataframe').dataTable({
-      "ajax": {
-        "url": "./siegfried.json"
-      },
-      "columns": [{data:'filename'},{data:'filesize'},{data:'modified'},{data:'errors'},{data:'md5'},{data:'namespace'},{data:'id'},{data:'format'},{data:'version'},{data:'mime'},{data:'basis'},{data:'warning'}]
+      "ajaxSource":"./siegfried.json",
+      "columns": [
+        {data:'filename'},
+        {data:'filesize'},
+        {data:'modified'},
+        {data:'errors'},
+        {data:'md5'},
+        {data:'namespace'},
+        {data:'id'},
+        {data:'format'},
+        {data:'version'},
+        {data:'mime'},
+        {data:'basis'},
+        {data:'warning'}
+        ]
     }); 
   }); 
 </script>
