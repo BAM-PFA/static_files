@@ -31,24 +31,22 @@
 <script src="https://cdn.datatables.net/1.13.8/js/dataTables.bootstrap5.min.js"></script>
 
 <script>
-  $(document).ready(function () { 
-    $('#dataframe').dataTable({
-      "ajaxSource":"./siegfried.json",
-      "columns": [
-        {data:'filename'},
-        {data:'filesize'},
-        {data:'modified'},
-        {data:'errors'},
-        {data:'md5'},
-        {data:'namespace'},
-        {data:'id'},
-        {data:'format'},
-        {data:'version'},
-        {data:'mime'},
-        {data:'basis'},
-        {data:'warning'}
-        ]
-    }); 
+  $('#dataframe').dataTable({
+    "ajaxSource":"https://bam-pfa.github.io/static_files/lynne-sachs-collection/2023/siegfried.json",
+    "columns": [
+      {data:'filename'},
+      {data:'filesize'},
+      {data:'modified'},
+      {data:'errors'},
+      {data:'md5'},
+      {data:'namespace'},
+      {data:'id'},
+      {data:'format'},
+      {data:'version'},
+      {data:'mime'},
+      {data:'basis'},
+      {data:'warning'}
+      ]
   }); 
 </script>
 </body>
